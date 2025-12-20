@@ -1,3 +1,4 @@
+import cookieParser from 'cookie-parser'
 import express from 'express'
 
 import { connectDB } from './lib/db.js'
@@ -10,6 +11,7 @@ const app = express()
 const PORT = ENV.PORT || 3000
 
 app.use(express.json()) // req.body
+app.use(cookieParser())
 
 app.use('/api/auth', authRouters)
 app.use('/api/messages', messageRouters)
