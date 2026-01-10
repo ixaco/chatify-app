@@ -1,12 +1,12 @@
-import { useChatStore } from '../store/useChatStore.js'
+import { useChatStore } from '../store/useChatStore'
 
-import ActiveTabSwitch from '../components/ActiveTabSwitch.jsx'
-import BorderAnimatedContainer from '../components/BorderAnimatedContainer.jsx'
-import ChatContainer from '../components/ChatContainer.jsx'
-import ChatsList from '../components/ChatsList.jsx'
-import ContactList from '../components/ContactList.jsx'
-import NoConversationPlaceholder from '../components/NoConversationPlaceholder.jsx'
-import ProfileHeader from '../components/ProfileHeader.jsx'
+import ActiveTabSwitch from '../components/ActiveTabSwitch'
+import BorderAnimatedContainer from '../components/BorderAnimatedContainer'
+import ChatContainer from '../components/ChatContainer'
+import ChatsList from '../components/ChatsList'
+import ContactList from '../components/ContactList'
+import NoConversationPlaceholder from '../components/NoConversationPlaceholder'
+import ProfileHeader from '../components/ProfileHeader'
 
 function ChatPage() {
 	const { activeTab, selectedUser } = useChatStore()
