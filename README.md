@@ -1,0 +1,156 @@
+A modern, full-stack real-time chat application built with the MERN stack, Socket.io, and deployed on Render.com.
+
+✨ Features
+Core Features
+
+🔐 Authentication & Authorization with JWT
+💬 Real-time Messaging with Socket.io
+👤 User Profiles with avatar upload
+📷 Image Sharing in chats
+🟢 Online/Offline Status indicators
+📧 Welcome Emails with Resend
+🔒 Security Protection with Arcjet
+🎨 Modern UI with responsive design
+
+Technical Features
+
+⚡ Real-time Updates - Instant message delivery
+🖼️ Cloud Storage - Images stored on Cloudinary
+🔑 Secure Authentication - HTTP-only cookies with JWT
+🛡️ Rate Limiting - DDoS protection with Arcjet
+🤖 Bot Detection - Malicious bot blocking
+📱 Responsive Design - Works on all devices
+♻️ Auto-reconnect - Persistent WebSocket connections
+
+
+🛠️ Tech Stack
+Frontend
+
+React - UI library
+Vite - Build tool
+Tailwind CSS - Styling
+Zustand - State management
+Socket.io Client - Real-time communication
+Axios - HTTP client
+React Router - Navigation
+React Hot Toast - Notifications
+
+Backend
+
+Node.js - Runtime environment
+Express.js - Web framework
+MongoDB - Database
+Mongoose - ODM
+Socket.io - Real-time engine
+JWT - Authentication
+bcryptjs - Password hashing
+Cloudinary - Image storage
+Resend - Email service
+Arcjet - Security & rate limiting
+
+DevOps & Deployment
+
+Render.com - Hosting platform
+MongoDB Atlas - Cloud database
+GitHub - Version control
+Nodemon - Development server
+
+
+📁 Project Structure
+chatify/
+├── backend/
+│   ├── src/
+│   │   ├── controllers/
+│   │   │   ├── auth.controller.js
+│   │   │   └── message.controller.js
+│   │   ├── middleware/
+│   │   │   ├── auth.middleware.js
+│   │   │   ├── arcjet.middleware.js
+│   │   │   └── socket.auth.middleware.js
+│   │   ├── models/
+│   │   │   ├── User.js
+│   │   │   └── Message.js
+│   │   ├── routes/
+│   │   │   ├── auth.route.js
+│   │   │   └── message.route.js
+│   │   ├── lib/
+│   │   │   ├── db.js
+│   │   │   ├── socket.js
+│   │   │   ├── cloudinary.js
+│   │   │   ├── resend.js
+│   │   │   ├── arcjet.js
+│   │   │   ├── utils.js
+│   │   │   └── env.js
+│   │   ├── emails/
+│   │   │   ├── emailHandlers.js
+│   │   │   └── emailTemplates.js
+│   │   └── server.js
+│   ├── package.json
+│   └── .env.example
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── store/
+│   │   ├── lib/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── package.json
+│   └── .env.example
+│
+├── README.md
+└── DEPLOY_GUIDE.md
+
+🚀 Quick Start
+Prerequisites
+
+Node.js v20+ installed
+MongoDB Atlas account
+Cloudinary account
+Resend account
+Arcjet account
+npm or yarn
+
+1. Clone Repository
+bashgit clone https://github.com/your-username/chatify.git
+cd chatify
+2. Backend Setup
+bashcd backend
+npm install
+Create .env file:
+env# MongoDB
+MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/chatify
+
+# JWT
+JWT_SECRET=your_super_secret_jwt_key_min_32_characters
+
+# Server
+PORT=3000
+NODE_ENV=development
+CLIENT_URL=http://localhost:5173
+
+# Cloudinary
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+
+# Resend
+RESEND_API_KEY=your_resend_api_key
+EMAIL_FROM=onboarding@resend.dev
+EMAIL_FROM_NAME=Chatify Team
+
+# Arcjet
+ARCJET_KEY=your_arcjet_key
+ARCJET_ENV=development
+Start backend:
+bashnpm run dev
+Backend runs on: http://localhost:3000
+3. Frontend Setup
+bashcd frontend
+npm install
+Create .env file:
+envVITE_API_URL=http://localhost:3000
+Start frontend:
+bashnpm run dev
+Frontend runs on: http://localhost:5173
