@@ -1,5 +1,3 @@
-A modern, full-stack real-time chat application built with the MERN stack, Socket.io, and deployed on Render.com.
-
 ✨ Features
 Core Features
 
@@ -55,62 +53,6 @@ MongoDB Atlas - Cloud database
 GitHub - Version control
 Nodemon - Development server
 
-
-📁 Project Structure
-chatify/
-├── backend/
-│   ├── src/
-│   │   ├── controllers/
-│   │   │   ├── auth.controller.js
-│   │   │   └── message.controller.js
-│   │   ├── middleware/
-│   │   │   ├── auth.middleware.js
-│   │   │   ├── arcjet.middleware.js
-│   │   │   └── socket.auth.middleware.js
-│   │   ├── models/
-│   │   │   ├── User.js
-│   │   │   └── Message.js
-│   │   ├── routes/
-│   │   │   ├── auth.route.js
-│   │   │   └── message.route.js
-│   │   ├── lib/
-│   │   │   ├── db.js
-│   │   │   ├── socket.js
-│   │   │   ├── cloudinary.js
-│   │   │   ├── resend.js
-│   │   │   ├── arcjet.js
-│   │   │   ├── utils.js
-│   │   │   └── env.js
-│   │   ├── emails/
-│   │   │   ├── emailHandlers.js
-│   │   │   └── emailTemplates.js
-│   │   └── server.js
-│   ├── package.json
-│   └── .env.example
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── store/
-│   │   ├── lib/
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── package.json
-│   └── .env.example
-│
-├── README.md
-└── DEPLOY_GUIDE.md
-
-🚀 Quick Start
-Prerequisites
-
-Node.js v20+ installed
-MongoDB Atlas account
-Cloudinary account
-Resend account
-Arcjet account
-npm or yarn
 
 1. Clone Repository
 bashgit clone https://github.com/your-username/chatify.git
